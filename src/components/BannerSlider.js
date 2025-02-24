@@ -40,7 +40,6 @@ const BannerSlider = () => {
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         <div className="relative w-full h-full overflow-hidden">
-                            {/* Background Image with Smooth Transition */}
                             <div className="absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out">
                                 <Image
                                     src={slide.image}
@@ -52,7 +51,6 @@ const BannerSlider = () => {
                                 />
                             </div>
 
-                            {/* Gradient Overlay & Content */}
                             <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-8 bg-gradient-to-r from-black/70 via-black/50 to-transparent">
                                 <div className="backdrop-blur-md bg-white/10 p-6 rounded-xl shadow-lg">
                                     <h2 className="text-4xl lg:text-5xl font-extrabold mb-4">{slide.title}</h2>
